@@ -1,0 +1,303 @@
+sudo apt-get update
+
+installing aws CLI 
+
+pip install awscli --upgrade --user
+
+sudo apt-get install awscli
+
+aws --version
+
+lsb_release -a
+
+
+ aws s3 mb s3://bucket-name
+
+aws configure
+
+aws s3 ls
+
+aws s3 rb s3://bucket-name
+
+aws s3 rb s3://bucket-name --force
+
+aws s3 cp file.txt s3://my-bucket/ --storage-class REDUCED_REDUNDANCY
+
+aws s3 ls s3://harsha1234567
+
+sudo apt-get install git
+
+create folder mkdir harsha
+git clone copy code
+cd imdb
+touch 1.js
+git add .
+git commit -m "imdb code"
+git push
+git pull clone
+git status
+git log
+
+git stash revert back the code
+
+git checkout master
+git merge --no-ff -m 'Merged in harshavardhan456789/1txt-edited-online-with-bitbucket-1544497562890 (pull request #1)' remotes/origin/harshavardhan456789/1txt-edited-online-with-bitbucket-1544497562890
+MergeCancel
+
+
+
+
+
+
+
+sudo apt-get install
+sudo apt-get install apache2
+curl localhost:8080
+
+aws ec2 start-instances --instance-ids i-1234567890abcdef0
+
+aws ec2 stop-instances --instance-ids i-1234567890abcdef0
+
+lsb_release -a to check version of ubuntu
+
+ansible
+
+sudo apt install software-properties-common
+
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update
+sudo apt install ansible
+
+create new folder
+
+mkdir code
+
+Node Js
+
+curl -sl 
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash
+
+sudo apt install nodejs
+
+to check enter node
+
+to exit .exit
+
+snap-04da5908290ab6254
+
+
+
+stop terminate
+
+
+- name: Stop sandbox instances
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  vars:
+    instance_ids:
+      - 'i-xxxxxx'
+      - 'i-xxxxxx'
+      - 'i-xxxxxx'
+    region: us-east-1
+  tasks:
+    - name: Stop the sandbox instances
+      ec2:
+        instance_ids: '{{ instance_ids }}'
+        region: '{{ region }}'
+        state: stopped
+        wait: True
+        vpc_subnet_id: subnet-29e63245
+        assign_public_ip: yes
+
+MYSQL
+
+sudo apt-get install mysql-server
+
+
+mysqladmin -u root -p create TUTORIALS
+
+mysql -u root -p to enter sql
+
+mysqldump -u root -p --all-databases > 1.sql
+
+shell Scripting
+
+varidale is empty value inside memory
+
+mysql
+
+mysql -u root -p
+
+CREATE DATABASE menagerie
+
+USE menagerie
+
+mysql -h host -u user -p menagerie
+
+CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+
+SHOW TABLES
+
+DESCRIBE pet
+
+Jenkins 
+
+sudo apt-get install default-jre
+
+sudo apt-get install default-jdk
+
+sudo add-apt-repository ppa:webupd8team/java
+
+Docker.
+
+sudo apt-get update
+
+sudo apt-get install docker-ce
+
+apt-cache madison docker-ce
+
+docker-ce | 18.09.0~ce-0~ubuntu | https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages
+
+sudo docker run hello-world
+
+
+
+
+
+
+ mkdir dockernode
+ cd dockernode/
+  sudo nano package.jason
+    ls
+   npm install
+ touch Dockerfile
+  sudo nano Dockerfile
+  sudo nano a .dockerignore
+  sudo docker build -t <your username>/node-web-app .
+  sudo docker build -t harshu432/node-web-app .
+   ls
+ sudo docker images
+ sudo docker run -p 49160:8080 -d harshu432/node-web-app
+  sudo docker ps
+  sudo docker ps -a
+  export DOCKER_ID_USER="username"
+   export DOCKER_ID_USER="harshu432"
+   sudo docker login
+  sudo docker images
+ sudo docker tag 6d0fa3d26dcb andalike/node-web-app
+  sudo docker tag fc902c96f416 harshu432/node-web-app
+ sudo docker push harshu432/node-web-app
+
+Do
+
+sudo apt-get remove docker docker-engine docker.io
+
+sudo apt-get update
+
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo apt-key fingerprint 0EBFCD88
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+
+sudo apt-get install docker-ce
+
+sudo apt-get install docker-ce=<VERSION>
+
+sudo docker run hello-world
+
+
+sudo docker exec -it f83f6e517900 /bin/bash
+sudo docker images
+ sudo docker exec -it 3b7ecd51ffe5 /bin/bash
+sudo docker ps
+sudo docker exec -it f83f6e517900 /bin/bash
+curl -i localhost:49160
+ sudo docker images
+sudo docker logs 3b7ecd51ffe5
+sudo docker ps
+curl -i f83f6e517900
+sudo docker logs f83f6e517900
+curl -i http://0.0.0.0:8080
+sudo docker exec -it f83f6e517900 /bin/bash
+ cd pythonNode/
+ sudo nano Dockerfile
+ rm -rf requirements.txt
+ sudo nano requirements.txt
+ sudo nano app.py
+ docker build -t friendlyhello .
+ sudodocker build -t friendlyhello .
+ sudo docker build -t friendlyhello .
+ sudo docker run -p 4000:80 friendlyhello
+sudo docker images ls -a
+sudo docker ps
+sudo docker ls
+ sudo docker ps
+ sudo docker ps -a
+sudo docker log 92632b244cec
+ sudo docker logs 92632b244cec
+sudo docker login
+ sudo docker tag 92632b244cec harshu432/friendlyhello
+ sudo docker image
+  sudo docker ps
+ sudo docker ps -a
+  sudo docker images ls -a
+ sudo docker images ps -a
+   sudo docker build -t friendlyhello .
+ sudo docker tag dc6449ba7418  harshu432/friendlyhello
+  sudo docker push harshu432/friendlyhello
+ docker pull mysql
+ sudo docker pull mysql
+  history
+ clear
+ sudo docker images
+ sudo docker run --name=mysql1 -d mysql/mysql-server:tag
+ sudo docker run --name=mysql1 -d mysql/mysql-server
+ sudo docker exec -it mysql1 mysql -uroot -p
+  sudo docker exec -it mysql1 mysql -u root -p
+ sudo docker logs mysql1 2>&1 | grep GENERATED
+ sudo docker exec -it mysql1 mysql -u root -p
+mysqldump -u root -p --all-databases > pet.sql
+ sudo apt-get install mysql-server
+ mysqldump -u root -p --all-databases > pet.sql
+ sudo docker logs mysql1 2>&1 | grep GENERATED
+ mysqldump -u root -p --all-databases > pet.sql
+ sudo docker exec -it mysql1 mysqldump -u root -p --all-databases > pet.sql
+
+
+npm install express
+pm2 start app.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
